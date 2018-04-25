@@ -1,2 +1,4 @@
-test_get.js
+*_test.js
+*_test.py
+__pycache__
 key.py
