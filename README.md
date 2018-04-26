@@ -27,3 +27,11 @@ pip install -r requirements.txt:
 ### Chuck quotes API
 
 https://api.chucknorris.io/
+
+### TwitterAPI - Python
+
+https://github.com/geduldig/TwitterAPI
+
+### Requests - Python
+
+https://github.com/requests/requests/
