@@ -1,4 +1,4 @@
-from key import api
+from api_key import api
 
 bruh = "Lil wayne"
 
