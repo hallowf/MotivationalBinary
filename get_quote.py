@@ -1,6 +1,7 @@
 import requests
 import json
 import codecs
+import time
 
 chuck_api = "https://api.chucknorris.io/jokes/random"
 
@@ -19,6 +20,7 @@ def convert_quote(text):
     decode_hex = hex_quote.decode("utf8")
     print(len(decode_hex))
     if (len(decode_hex) > 260):
+        time.sleep(60)
         convert_quote(fetch_random())
     else:
         return decode_hex
