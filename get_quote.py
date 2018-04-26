@@ -1,29 +1,29 @@
 import requests
 import json
+import codecs
+
+chuck_api = "https://api.chucknorris.io/jokes/random"
 
 
-quotes_url = "http://quotes.rest/qod.json"
 
-def fetch_quote():
-    req = requests.get(quotes_url)
-    if req.status_code == 429:
-        #make request again but trough tor network
-        print("Starting tor request")
-    else:
-        parsed_response = req.json()
-        contents_obj = parsed_response["contents"]
-        quotes_obj = contents_obj["quotes"][0]
-        quote = quotes_obj["quote"]
-        return quote
-
+def fetch_random():
+    req = requests.get(chuck_api)
+    parsed_response = req.json()
+    quote = parsed_response["value"]
+    return quote
 
 
 def convert_quote(text):
-    bin_quote = " ".join(map(bin,bytearray(text, "utf8")))
-    bin_quote = bin_quote.replace("b", "")
-    return bin_quote
+    quote_encode = text.encode()
+    hex_quote = codecs.encode(quote_encode, "hex")
+    decode_hex = hex_quote.decode("utf8")
+    print(len(decode_hex))
+    if (len(decode_hex) > 260):
+        convert_quote(fetch_random())
+    else:
+        return decode_hex
 
 
 
 
-print(convert_quote("lil wayne"))
+print(convert_quote(fetch_random()))
