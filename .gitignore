@@ -2,3 +2,5 @@
 *_test.py
 __pycache__
 *_key.py
+*.pyc
+env
