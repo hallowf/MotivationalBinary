@@ -23,6 +23,7 @@ pip install -r requirements.txt:
 
 ### All trademarks and registered trademarks are the property of their respective owners.
 
+### disclaimer: This product is not affiliated with Chuck Norris, any motion picture corporation, any television corporation, parent, or affiliate corporation. All motion pictures, products, and brands mentioned are the respective trademarks and copyrights of their owners. All material on this website is intended for entertainment purposes only. The content found here is not necessarily true and should not be regarded as truth.
 
 ### Chuck quotes API
 
