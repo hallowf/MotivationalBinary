@@ -5,7 +5,7 @@ from get_quote import convert_quote
 binary_quote = convert_quote(fetch_random())
 
 def post_tweet(text):
-    r = api.request('statuses/update', {'status':text})
+    r = api.request("statuses/update", {"status":text})
     print(r.status_code)
 
 
