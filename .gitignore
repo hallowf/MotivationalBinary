@@ -4,3 +4,4 @@ __pycache__
 *_key.py
 *.pyc
 env
+objs.pkl
