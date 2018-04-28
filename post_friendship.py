@@ -6,6 +6,7 @@ from search_to_follow import master_ID
 
 slug = "technology"
 
+IDS_array = who_follows(master_ID)
 
 
 def make_friendship(UIDS):
@@ -14,6 +15,3 @@ def make_friendship(UIDS):
         r = api.request("friendships/create", {"user_id":x})
         print(r.status_code)
         time.sleep(100)
-
-
-make_friendship(who_follows(master_ID))
