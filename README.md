@@ -11,6 +11,12 @@ between the quotation marks "".
 
 When you run tweeterBot.py it fetches a random chuck quote converts it into hexadecimal and posts it on twitter (You can setup a cron job to automate it or use the schedule module for python)
 
+## Notes:
+
+When a master_ID is provided in search_to_follow.py it fetches "a page" of the user's followers (it contains 213 ids) to traverse along the page an integer value is store in a pickle file
+
+To avoid timeouts due to rate limiting the program the program sleeps for 70 seconds in between friend_request (70 * 213 = 14910 Seconds - 4 hours and 14 minutes)
+
 ## Requirements:
 
 You can use:
