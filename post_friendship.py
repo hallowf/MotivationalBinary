@@ -18,6 +18,3 @@ def make_friendship(UIDS):
         r = api.request("friendships/create", {"user_id":x})
         print(r.status_code)
         time.sleep(100)
-
-
-make_friendship(fetch_suggestions())

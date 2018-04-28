@@ -15,6 +15,3 @@ def fetch_suggestions():
         IDS[x["id_str"]] = x["name"]
     print(IDS)
     return IDS
-
-
-fetch_suggestions()
