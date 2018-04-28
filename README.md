@@ -13,7 +13,11 @@ When you run tweeterBot.py it fetches a random chuck quote converts it into hexa
 
 ## Requirements:
 
-pip install -r requirements.txt:
+You can use:
+
+    pip install -r requirements.txt
+
+It will install:
 
   * requests
   * TwitterAPI
