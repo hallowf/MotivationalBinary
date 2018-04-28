@@ -14,4 +14,4 @@ def make_friendship(UIDS):
         print(x)
         r = api.request("friendships/create", {"user_id":x})
         print(r.status_code)
-        time.sleep(100)
+        time.sleep(70)
