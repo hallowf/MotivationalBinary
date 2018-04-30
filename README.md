@@ -1,7 +1,6 @@
 # MotivationalBinary (A.K.A. HEXadecimalChuck)
 
-![Build](https://scrutinizer-ci.com/g/hallowf/MotivationalBinary/badges/quality-score.png?b=master)
-
+![Build](https://scrutinizer-ci.com/g/hallowf/MotivationalBinary/badges/quality-score.png?b=master) ![Build](https://scrutinizer-ci.com/g/hallowf/MotivationalBinary/badges/build.png?b=master)
 
 
 ## HEXadecimalChuck
@@ -19,7 +18,7 @@ When you run tweeterBot.py it fetches a random chuck quote converts it into hexa
 
 When a master_ID is provided in search_to_follow.py it fetches "a page" of the user's followers (it contains 20 ids) to traverse along the page an integer value is stored in a pickle file
 
-To avoid timeouts due to rate limiting the program sleeps for 70 seconds in between friend_request (70 * 213 = 1400 Seconds - 38 minutes)
+To avoid timeouts due to rate limiting the program sleeps for 70 seconds in between friend_request (70 * 20 = 1400 Seconds - 38 minutes)
 
 ## Requirements:
 
