@@ -6,13 +6,13 @@ master_ID = "116568685"
 
 def who_follows(ID):
     page_cursor = get_pickle()
-    r = api.request("followers/list", {"user_id":ID, "cursor":page_cursor})
+    r = api.request("followers/ids", {"user_id":ID, "cursor":page_cursor, "count":200})
     print(r.status_code)
     parse_response = r.json()
-    users_inf = parse_response["users"]
+    users_inf = parse_response["ids"]
     IDS = []
     for x in users_inf:
-        IDS.append(x["id_str"])
+        IDS.append(x)
     page_cursor += -1
     print(page_cursor)
     make_pickle(page_cursor)
