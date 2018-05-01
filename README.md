@@ -16,9 +16,9 @@ When you run tweeterBot.py it fetches a random chuck quote converts it into hexa
 
 ## Notes:
 
-When a master_ID is provided in search_to_follow.py it fetches "a page" of the user's followers (it contains 20 ids) to traverse along the page an integer value is stored in a pickle file
+When a master_ID is provided in search_to_follow.py it fetches "a page" of the user's followers (it contains 200 ids, you can change how many you want by modifying the count in search_to_follow.py) to traverse along the page an integer value is stored in a pickle file
 
-To avoid timeouts due to rate limiting the program sleeps for 70 seconds in between friend_request (70 * 20 = 1400 Seconds - 38 minutes)
+To avoid timeouts due to rate limiting the program sleeps for 70 seconds in between friend_request (70 * 100 = 7000 Seconds ~ 1 hour and 56 minutes)
 
 ## Requirements:
 
