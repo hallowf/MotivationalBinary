@@ -7,7 +7,7 @@ count = 100
 
 def who_follows(ID):
     page_cursor = get_pickle()
-    r = api.request("followers/ids", {"user_id":ID, "cursor":page_cursor, count})
+    r = api.request("followers/ids", {"user_id":ID, "cursor":page_cursor, "count":count})
     print(r.status_code)
     parse_response = r.json()
     users_inf = parse_response["ids"]
