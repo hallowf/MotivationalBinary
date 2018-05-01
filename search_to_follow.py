@@ -3,10 +3,11 @@ import json
 import pickle
 
 master_ID = "116568685"
+count = 100
 
 def who_follows(ID):
     page_cursor = get_pickle()
-    r = api.request("followers/ids", {"user_id":ID, "cursor":page_cursor, "count":200})
+    r = api.request("followers/ids", {"user_id":ID, "cursor":page_cursor, count})
     print(r.status_code)
     parse_response = r.json()
     users_inf = parse_response["ids"]
