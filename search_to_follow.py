@@ -3,7 +3,7 @@ import json
 import pickle
 
 master_ID = "116568685"
-count = 100
+count = 50
 
 def who_follows(ID):
     page_cursor = get_pickle()
