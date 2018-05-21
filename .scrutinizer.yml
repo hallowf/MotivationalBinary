@@ -1,4 +1,13 @@
 # .scrutinizer.yml
-filter:
-    excluded_paths:
-        - "setup.py"
+build:
+    nodes:
+        tests: true
+        analysis:
+            tests:
+                override:
+                    -
+                        command: pylint-run
+                    - py-scrutinizer-run
+
+checks:
+    python: {  }
