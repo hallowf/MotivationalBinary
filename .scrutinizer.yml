@@ -1,4 +1,4 @@
 # .scrutinizer.yml
 filter:
     excluded_paths:
-        - "setup"
+        - "setup.py"
