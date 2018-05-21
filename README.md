@@ -1,5 +1,8 @@
 # MotivationalBinary (A.K.A. HEXadecimalChuck)
 
+# This was built for testing purposes and development of personal skills only since this program goes against the following rule of Twitter's API:
+## Please note that Twitter does not permit any automated or bulk following or unfollowing behavior. Please review our automation rules and best practices for more information on automating your account.
+
 ![Build](https://scrutinizer-ci.com/g/hallowf/MotivationalBinary/badges/quality-score.png?b=master) ![Build](https://scrutinizer-ci.com/g/hallowf/MotivationalBinary/badges/build.png?b=master)
 
 
