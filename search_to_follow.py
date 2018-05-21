@@ -1,9 +1,19 @@
-from api_key import api
 import json
 import pickle
+from TwitterAPI import TwitterAPI
+
+with open("api_key.json") as json_data:
+    all_keys = json.load(json_data)
+    consumer_key = all_keys["consumer_key"]
+    consumer_secret = all_keys["consumer_secret"]
+    access_token_key = all_keys["access_token_key"]
+    access_token_secret = all_keys["access_token_secret"]
+
+api = TwitterAPI(consumer_key, consumer_secret, access_token_key, access_token_secret)
+
 
 master_ID = "116568685"
-count = 50
+count = 25
 
 def who_follows(ID):
     page_cursor = get_pickle()
@@ -20,14 +30,6 @@ def who_follows(ID):
     print(IDS)
     return IDS
 
-def reset_pickle_template():
-    with open("objs.pkl.template", "wb") as f:
-        pickle.dump(-1, f)
-
-
-def reset_pickle():
-    with open("objs.pkl", "wb") as f:
-        pickle.dump(-1, f)
 
 def make_pickle(obj):
     with open("objs.pkl", "wb") as f:
