@@ -1,5 +1,14 @@
-from api_key import api
 import json
+from TwitterAPI import TwitterAPI
+
+with open("api_key.json") as json_data:
+    all_keys = json.load(json_data)
+    consumer_key = all_keys["consumer_key"]
+    consumer_secret = all_keys["consumer_secret"]
+    access_token_key = all_keys["access_token_key"]
+    access_token_secret = all_keys["access_token_secret"]
+
+api = TwitterAPI(consumer_key, consumer_secret, access_token_key, access_token_secret)
 
 # Category to search users
 slug = "tecnologia"
