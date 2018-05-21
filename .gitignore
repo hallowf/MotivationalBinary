@@ -5,3 +5,5 @@ __pycache__
 *.pyc
 env
 objs.pkl
+build
+*_key.json
