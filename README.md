@@ -1,6 +1,6 @@
 # MotivationalBinary (A.K.A. HEXadecimalChuck)
 
-# This was built for testing purposes and development of personal skills only since this program goes against the following rule of Twitter's API:
+# This was built for testing purposes and development of personal skills only, since this program goes against the following rule of Twitter's API:
 ## Please note that Twitter does not permit any automated or bulk following or unfollowing behavior. Please review our automation rules and best practices for more information on automating your account.
 
 ![Build](https://scrutinizer-ci.com/g/hallowf/MotivationalBinary/badges/quality-score.png?b=master) ![Build](https://scrutinizer-ci.com/g/hallowf/MotivationalBinary/badges/build.png?b=master)
@@ -12,16 +12,19 @@ This was supposed to be Motivational quotes in binary but due to the lack of fre
 
 ## How to use:
 
-You will need twitter's api keys you can insert them in the file api_key.py
+You will need twitter's api keys you can insert them in the file api_key.json
 between the quotation marks "".
 
 When you run tweeterBot.py it fetches a random chuck quote converts it into hexadecimal and posts it on twitter (You can setup a cron job to automate it or use the schedule module for python)
 
 ## Notes:
 
-When a master_ID is provided in search_to_follow.py it fetches "a page" of the user's followers (it contains 200 ids, you can change how many you want by modifying the count in search_to_follow.py) to traverse along the page an integer value is stored in a pickle file
-
+///When a master_ID is provided in search_to_follow.py it fetches "a page" of the user's followers (it contains 200 ids, you can change how many you want by modifying the count in search_to_follow.py) to traverse along the page an integer value is stored in a pickle file/// => It now contains only 25 IDs(count = 25 in search_to_follow.py)
 To avoid timeouts due to rate limiting the program sleeps for 70 seconds in between friend_request (70 * 100 = 7000 Seconds ~ 1 hour and 56 minutes)
+
+
+
+
 
 ## Requirements:
 
